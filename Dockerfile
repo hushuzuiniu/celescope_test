@@ -33,7 +33,7 @@ RUN mkdir -p /data/RightonAuto/analysis /data/RightonAuto/config $software/datab
 WORKDIR $software/source
 RUN wget -c http://downloads.sourceforge.net/project/subread/subread-1.5.1/subread-1.5.1-Linux-x86_64.tar.gz -o $software/source/subread-1.5.1-Linux-x86_64.tar.gz \
 && tar -xf $software/source/subread-1.5.1-Linux-x86_64.tar.gz \
-&& ln -s $software/source/subread-1.5.1-Linux-x86_64.tar.gz/bin/featureCounts $software/bin/featureCounts \
+&& ln -s $software/source/subread-1.5.1-Linux-x86_64/bin/featureCounts $software/bin/featureCounts \
 && rm software/source/subread-1.5.1-Linux-x86_64.tar.gz
 
 # STAR
